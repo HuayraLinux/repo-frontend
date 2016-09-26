@@ -44,7 +44,22 @@ export default function() {
     var data = {
       torbellino: {
         'huayra-tpm': {
-          'version': '2.0.0.117-3',
+          'versions': [
+            {
+              'Architecture': 'amd64',
+              'Version': '2.0.0.117-3',
+              'Size': '2763726',
+              'Installed-Size': '10368',
+              'Filename': 'pool/non-free/h/huayra-tpm/huayra-tpm_2.0.0.117-3_amd64.deb'
+            },
+            {
+              'Architecture': 'i386',
+              'Version': '2.0.0.117-3',
+              'Size': '2191802',
+              'Installed-Size': '8980',
+              'Filename': 'pool/non-free/h/huayra-tpm/huayra-tpm_2.0.0.117-3_i386.deb'
+            }
+          ],
 
           'striderURL': 'http://ci.huayragnulinux.com.ar/huayralinux/huayra-curriculum',
           'striderJobURL': 'http://ci.huayragnulinux.com.ar/huayralinux/huayra-curriculum/job/57e2c6cd5c172f2c7a3af1e3',
@@ -66,7 +81,22 @@ export default function() {
       },
       brisa: {
         'huayra-tpm': {
-          'version': '2.0.0.116-7',
+          'versions': [
+            {
+              'Architecture': 'amd64',
+              'Version': '2.0.0.117-3',
+              'Size': '2763726',
+              'Installed-Size': '10368',
+              'Filename': 'pool/non-free/h/huayra-tpm/huayra-tpm_2.0.0.117-3_amd64.deb'
+            },
+            {
+              'Architecture': 'i386',
+              'Version': '2.0.0.117-3',
+              'Size': '2191802',
+              'Installed-Size': '8980',
+              'Filename': 'pool/non-free/h/huayra-tpm/huayra-tpm_2.0.0.117-3_i386.deb'
+            }
+          ],
 
           'striderURL': 'http://ci.huayragnulinux.com.ar/huayralinux/huayra-curriculum',
           'striderJobURL': 'http://ci.huayragnulinux.com.ar/huayralinux/huayra-curriculum/job/57e2c6cd5c172f2c7a3af1e3',
@@ -79,8 +109,6 @@ export default function() {
           'Conflicts': ['libtdagent', 'tdagent'],
           'Priority': 'extra',
           'Section': 'non-free/utils',
-          'DownloadURL_i386': 'pool/non-free/h/huayra-tpm/huayra-tpm_2.0.0.117-3_i368.deb',
-          'DownloadURL_amd64': 'pool/non-free/h/huayra-tpm/huayra-tpm_2.0.0.117-3_amd64.deb',
 
           'Description': 'Libraries and Agent of Theft Deterrent',
         }
@@ -98,8 +126,20 @@ export default function() {
         {
           package: 'huayra-tpm',
           component: 'non-free',
-          archs: ['i386', 'amd64', 'source'],
-          version: '2.0.0.117-3'
+          versions: [
+            {
+              arch: 'i386',
+              version: '2.0.0.117-3'
+            },
+            {
+              arch: 'amd64',
+              version: '2.0.0.117-3'
+            },
+            {
+              arch: 'source',
+              version: '2.0.0.117-3'
+            }
+          ]
         },
       ],
 
@@ -107,8 +147,20 @@ export default function() {
         {
           package: 'huayra-tpm',
           component: 'non-free',
-          archs: ['i386', 'amd64', 'source'],
-          version: '2.0.0.116-7'
+          versions: [
+            {
+              arch: 'i386',
+              version: '2.0.0.116-7'
+            },
+            {
+              arch: 'amd64',
+              version: '2.0.0.116-7'
+            },
+            {
+              arch: 'source',
+              version: '2.0.0.116-7'
+            }
+          ]
         },
       ]
     };
