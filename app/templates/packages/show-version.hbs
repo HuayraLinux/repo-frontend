@@ -6,7 +6,7 @@
 
 <h2 class="ui header">Paquete
   {{#link-to "packages.showPackage" model.packageName (query-params distribution=model.distributionName)}}{{model.packageName}}{{/link-to}}
-   ({{model.version}}) en {{#link-to "distributions.show" model.distributionName}}{{model.distributionName}}{{/link-to}}</h2>
+  en {{#link-to "distributions.show" model.distributionName}}{{model.distributionName}}{{/link-to}}</h2>
 
 <p>{{model.Description}}</p>
 
