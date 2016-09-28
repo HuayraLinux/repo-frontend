@@ -33,14 +33,6 @@
     <li><a href={{model.lastCommitURL}} target=_blank>Link al commit relativo al build</a></li>
   {{/if}}
 
-  {{#if model.DownloadURL_i386}}
-    <li><a href={{model.DownloadURL_i386}} target=_blank>Descargar .deb para i386</a></li>
-  {{/if}}
-
-  {{#if model.DownloadURL_amd64}}
-    <li><a href={{model.DownloadURL_amd64}} target=_blank>Descargar .deb para amd64</a></li>
-  {{/if}}
-
 
 </ul>
 
@@ -49,3 +41,31 @@
 <p><b>Conflicts:</b> {{repo-inline-package-list distro=model.distributionName packages=model.Conflicts}}</p>
 <p><b>Priority:</b> {{model.Priority}}</p>
 <p><b>Section:</b> {{model.Section}}</p>
+
+
+<h4>Archivos asociados</h4>
+
+<table class="ui celled striped table">
+
+  <thead>
+    <tr>
+      <th>Arquitectura</th>
+      <th>Tamaño instalado</th>
+      <th>Tamaño</th>
+      <th>Versión</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    {{#each model.versions as |version|}}
+      <tr>
+        <td><a href="http://repo.huayra.conectarigualdad.gob.ar/huayra/{{version.Filename}}" target="_blank">{{version.Architecture}}</a></td>
+        <td>{{number-to-human-size version.Installed-Size}}</td>
+        <td>{{number-to-human-size version.Size}}</td>
+        <td>{{version.Version}}</td>
+      </tr>
+    {{/each}}
+
+  </tbody>
+</table>
