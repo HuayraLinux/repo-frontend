@@ -73,9 +73,6 @@ export default function() {
           'Priority': 'extra',
           'Section': 'non-free/utils',
 
-          'DownloadURL_i386': 'pool/non-free/h/huayra-tpm/huayra-tpm_2.0.0.117-3_i368.deb',
-          'DownloadURL_amd64': 'pool/non-free/h/huayra-tpm/huayra-tpm_2.0.0.117-3_amd64.deb',
-
           'Description': 'Libraries and Agent of Theft Deterrent',
         }
       },
