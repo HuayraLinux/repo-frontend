@@ -20,6 +20,7 @@ Router.map(function() {
   });
 
   this.route('package');
+  this.route('bad_url', {path: "/*bad_url"});
 });
 
 export default Router;
