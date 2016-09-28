@@ -15,23 +15,17 @@
       <th>Nombre</th>
       <th>Componente</th>
       <th>Arquitecturas</th>
-      <th>Versión</th>
+      <th>Versiones</th>
     </tr>
   </thead>
 
   <tbody>
 
     {{#each model as |package|}}
-      <tr>
-        <!--<td class="collapsing"><i class="folder icon"></i></td>-->
-        <td class="">{{#link-to "packages.showVersion" model.distro package.package}}{{package.package}}{{/link-to}}</td>
-        <td class="collapsing">{{package.component}}</td>
-        <td class="collapsing">{{package.archs}}</td>
-        <td class="collapsing">{{package.version}}</td>
-      </tr>
+      {{repo-package-in-distro-row distro=model.distro package=package}}
     {{else}}
       <tr>
-        <td>No hay dsitribuciones para mostrar.</td>
+        <td colspan=4>No hay dsitribuciones para mostrar.</td>
       </tr>
     {{/each}}
 
