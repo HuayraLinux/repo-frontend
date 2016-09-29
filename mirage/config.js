@@ -187,20 +187,20 @@ export default function() {
     var data = {
       'torbellino': [
         {
-          package: 'huayra-tpm',
-          component: 'non-free',
+          Package: 'huayra-tpm',
+          Component: 'non-free',
           versions: [
             {
-              arch: 'i386',
-              version: '2.0.0.117-3'
+              Architecture: 'i386',
+              Version: '2.0.0.117-3'
             },
             {
-              arch: 'amd64',
-              version: '2.0.0.117-3'
+              Architecture: 'amd64',
+              Version: '2.0.0.117-3'
             },
             {
-              arch: 'source',
-              version: '2.0.0.117-3'
+              Architecture: 'source',
+              Version: '2.0.0.117-3'
             }
           ]
         },
@@ -208,20 +208,20 @@ export default function() {
 
       'brisa': [
         {
-          package: 'huayra-tpm',
-          component: 'non-free',
-          versions: [
+          Package: 'huayra-tpm',
+          Component: 'non-free',
+          Versions: [
             {
-              arch: 'i386',
-              version: '2.0.0.116-7'
+              Architecture: 'i386',
+              Version: '2.0.0.116-7'
             },
             {
-              arch: 'amd64',
-              version: '2.0.0.116-7'
+              Architecture: 'amd64',
+              Version: '2.0.0.116-7'
             },
             {
-              arch: 'source',
-              version: '2.0.0.116-7'
+              Architecture: 'source',
+              Version: '2.0.0.116-7'
             }
           ]
         },
