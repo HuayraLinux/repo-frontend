@@ -6,7 +6,7 @@ export default Ember.Component.extend({
   archList: Ember.computed('package.versions', function() {
     if (this.get('package.versions')) {
       return this.get('package.versions').map((version) => {
-        return version.arch;
+        return version.Architecture;
       });
     } else {
       return [];
@@ -19,7 +19,7 @@ export default Ember.Component.extend({
   versionListNonUnique: Ember.computed('package.versions', function() {
     if (this.get('package.versions')) {
       return this.get('package.versions').map((version) => {
-        return version.version;
+        return version.Version;
       });
     } else {
       return [];
