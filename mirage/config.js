@@ -68,8 +68,41 @@ export default function() {
           'lastCommitURL': 'https://github.com/HuayraLinux/huayra-ritmos/commit/7140769dccb21d9f71641150cca0dd83ebda00f9',
 
           'Maintainer': 'Miguel Angel Garcia <miguel.garcia@gmail.com>',
-          'Depends': ['libnotify4', 'libssl1.0.0', 'libatk1.0-0', 'libpango1.0-0', 'libgtk2.0-0'],
-          'Conflicts': ['libtdagent', 'tdagent'],
+          'Depends': [
+            {
+              'Package': 'python',
+              'Version': {
+                'Text': '(>=2.6.6-7~)',
+                'Relation': '>=',
+                'Version': '2.6.6-7~'
+              },
+              'Alternatives': [{
+                'Package': 'jython',
+                'Version': {
+                  'Text': '(=2.5.3)',
+                  'Relation': '=',
+                  'Version': '2.5.3'
+                }
+              }]
+            },
+            {
+              'Package': 'python',
+              'Version': {
+                'Text': '(<<2.8)',
+                'Relation': '<<',
+                'Version': '2.8'
+              },
+              'Alternatives': []
+            },
+            {
+              'Package': 'python-pygame',
+              'Alternatives': []
+            }
+          ],
+          'Conflicts': [
+            { 'Package': 'libtdagent' },
+            { 'Package': 'tdagent' }
+          ],
           'Priority': 'extra',
           'Section': 'non-free/utils',
 
@@ -102,8 +135,41 @@ export default function() {
           'lastCommitURL': 'https://github.com/HuayraLinux/huayra-ritmos/commit/7140769dccb21d9f71641150cca0dd83ebda00f9',
 
           'Maintainer': 'Miguel Angel Garcia <miguel.garcia@gmail.com>',
-          'Depends': ['libnotify4', 'libssl1.0.0', 'libatk1.0-0', 'libpango1.0-0', 'libgtk2.0-0'],
-          'Conflicts': ['libtdagent', 'tdagent'],
+          'Depends': [
+            {
+              'Package': 'python',
+              'Version': {
+                'Text': '(>=2.6.6-7~)',
+                'Relation': '>=',
+                'Version': '2.6.6-7~'
+              },
+              'Alternatives': [{
+                'Package': 'jython',
+                'Version': {
+                  'Text': '(=2.5.3)',
+                  'Relation': '=',
+                  'Version': '2.5.3'
+                }
+              }]
+            },
+            {
+              'Package': 'python',
+              'Version': {
+                'Text': '(<<2.8)',
+                'Relation': '<<',
+                'Version': '2.8'
+              },
+              'Alternatives': []
+            },
+            {
+              'Package': 'python-pygame',
+              'Alternatives': []
+            }
+          ],
+          'Conflicts': [
+            { 'Package': 'libtdagent' },
+            { 'Package': 'tdagent' }
+          ],
           'Priority': 'extra',
           'Section': 'non-free/utils',
 
