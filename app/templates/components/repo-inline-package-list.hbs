@@ -1,3 +1,7 @@
+<ul>
 {{#each packages as |package|}}
-  {{#link-to "packages.showVersion" distro package}}{{package}}{{/link-to}}
+  <li>{{#link-to "packages.showVersion" distro package.Package class="label"}}{{package.Package}}{{/link-to}}
+    {{package.Version.Text}}
+  </li>
 {{/each}}
+</ul>
