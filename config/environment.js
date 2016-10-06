@@ -20,6 +20,9 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV['ember-cli-mirage'] = {
+      enabled: true
+    }
   }
 
   if (environment === 'test') {
@@ -38,8 +41,8 @@ module.exports = function(environment) {
     ENV.rootURL = '/repo-frontend/';
 
     ENV['ember-cli-mirage'] = {
-      enabled: true
-    };
+      enabled: false
+    }
   }
 
   return ENV;
