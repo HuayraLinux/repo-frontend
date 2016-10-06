@@ -10,8 +10,7 @@ las versiones de los paquetes y hacer consultas.
 
 ## Versión online
 
-Actualmente estamos publicando una versión de prueba en esta
-url: <a href="https://huayralinux.github.io/repo-frontend" target=_blank>https://huayralinux.github.io/repo-frontend</a>
+Actualmente estamos publicando una versión de produccion en: <a href="http://repo-frontend.surge.sh" target=_blank>http://repo-frontend.surge.sh</a>
 
 ## Como instalar
 
