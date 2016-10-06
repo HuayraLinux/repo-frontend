@@ -22,7 +22,7 @@ comandos:
 	@echo "    ${G}version_minor${N}        Genera una versión (0.MINOR.0)."
 	@echo "    ${G}version_major${N}        Genera una versión (MAJOR.0.0)."
 	@echo ""
-	@echo "    ${G}actualizar_gitpages${N}  Sube el sitio a gitpages."
+	@echo "    ${G}deploy${N}               Sube el sitio a http://repo-frontend.surge.sh"
 	@echo ""
 	@echo ""
 
@@ -40,14 +40,6 @@ version_minor:
 version_major:
 	ember release --major
 
-actualizar_gitpages:
-	@echo "${G}actualizando gitpages ...${N}"
-	@ember github-pages:commit --message "Update gitpages."
-	@git push origin gh-pages:gh-pages
-	@echo ""
-	@echo "https://huayralinux.github.io/repo-frontend/"
-	@echo ""
-
-_limpiar_gitpages:
-	git checkout --orphan gh-pages && rm -rf `bash -c "ls -a | grep -vE '\.gitignore|\.git|node_modules|bower_components|(^[.]{1,2}/?$)'"` && git add -A && git commit -m "initial gh-pages commit"
-	git checkout master
+deploy:
+	ember build --prod
+	cd dist; surge -d repo-frontend.surge.sh
