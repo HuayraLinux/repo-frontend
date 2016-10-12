@@ -8,7 +8,11 @@
   {{#link-to "packages.showPackage" model.packageName (query-params distribution=model.distributionName)}}{{model.packageName}}{{/link-to}}
   en {{#link-to "distributions.show" model.distributionName}}{{model.distributionName}}{{/link-to}}</h2>
 
-<p>{{model.Description}}</p>
+<p>{{model.Description.Short-Description}}</p>
+
+<p><strong>Description:</strong> {{repo-showMultiline input=model.Description.Long-Description}}</p>
+
+<p><b>Actions:</b></p>
 
 <ul>
   <li>{{#link-to "packages.showPackage" model.packageName (query-params distribution=model.distributionName)}}Ver qué versiones hay en otras distribuciones{{/link-to}}</li>
@@ -32,7 +36,6 @@
   {{#if model.lastCommitURL}}
     <li><a href={{model.lastCommitURL}} target=_blank>Link al commit relativo al build</a></li>
   {{/if}}
-
 
 </ul>
 

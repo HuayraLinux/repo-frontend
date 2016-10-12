@@ -27,3 +27,7 @@ body {
 tr.selected {
   background-color: #e5f2f3 !important;
 }
+
+.repo-showMultiline-container {
+  padding-left: 1em;
+}
