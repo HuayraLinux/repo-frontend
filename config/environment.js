@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    URL_API_BACKEND: 'http://devel.huayragnulinux.com.ar:8081',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
