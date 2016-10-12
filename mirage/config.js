@@ -4,6 +4,8 @@ export default function() {
   // this.namespace = '';    // make this `api`, for example, if your API is namespaced
   // this.timing = 400;      // delay for each request, automatically set to 0 during testing
 
+  this.passthrough('http://devel.huayragnulinux.com.ar:8081/**');
+
   this.get('/packages/:package', (schema, request) => {
     var packageName = request.params.package;
 
@@ -106,7 +108,11 @@ export default function() {
           'Priority': 'extra',
           'Section': 'non-free/utils',
 
-          'Description': 'Libraries and Agent of Theft Deterrent',
+          'Description': {
+            'Long-Description': "Libraries and Agent of Theft Deterrent",
+            'Short-Description': "Libraries and Agent of Theft Deterrent",
+            'Text': "Libraries and Agent of Theft Deterrent"
+          },
         }
       },
       brisa: {
@@ -173,7 +179,11 @@ export default function() {
           'Priority': 'extra',
           'Section': 'non-free/utils',
 
-          'Description': 'Libraries and Agent of Theft Deterrent',
+          'Description': {
+            'Long-Description': "Libraries and Agent of Theft Deterrent",
+            'Short-Description': "Libraries and Agent of Theft Deterrent",
+            'Text': "Libraries and Agent of Theft Deterrent"
+          },
         }
       }
     };
