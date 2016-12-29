@@ -7,7 +7,7 @@ rev=$(git rev-parse --short HEAD)
 # Instalamos las dependencias
 echo Instalando dependencias
 npm install
-node_modules/.bin/bower install
+bower install
 
 # Generamos la página
 echo Buildeando html para producción
