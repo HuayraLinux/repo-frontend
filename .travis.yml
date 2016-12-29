@@ -22,12 +22,3 @@ install:
 
 script:
   - npm test
-
-deploy:
-  provider: script
-  script: ./deploy.sh
-
-env:
-  global:
-    - GH_REF=github.com/HuayraLinux/repo-frontend
-    - secure: "mHtopDEXxp/oNnCnd+ZBbcn3vIrKKcgAAgt0ZqL06T3+W5uKauhxyAyZ7GWrVbiQOIC+pqtEoSX1UwTSUoQGb5OQl7SjgdIU4kPAKZU69gMNGwJFMR/29JQFXmeKrnaC7q4yN5OZsp5VDwpBbPisPG9+J+EdQW44boeszUf+tqqtB3MXpvv5I/d7li42NG0aq9WREnCIanu9HUjdcX6mR6wSvlvopgXHv9Bntv2KbFWMm/NC/d6h6GttIPWTi0yRYT1L0Sr4C3A/WWCTXR3xgMSkEikDCQ1IGzVrQxrFOMe0Q239jV8zL8OFiRqip9XsaJan0tdY/sR/KQVgOX6lq6u3Cd9T1xl8MOfLL/Vkn3ykDyTUVIW13v0aY0w5wA6xb9dC3wgMLzA2jObBF6imniRQlLsfM/7lRf4bVfN8Gy+47gYMAz/hHjK7ax4r3N2MJN8JX6ojfleFH2X18DFWTZGsT5ZBpZ3hl8Nqh9ptT1VYK13lNYxvyMs/1mWhTB4Z0Lee7Ny08izAGi5IWAdzEqgoyM9u15YfB8nTXHzX/7NPLGlxRcfH2n9PetHyOhHtwgDQmFHlsZTPd8vKxXfkUvIkb8CmEkgLjVvo4Ta9x8ENJ27AyJ8+UOSbkj7ELPyam3hqwoIh8lrIctx46gbdfOlELnailW0T4/KS3ka2nbg="
