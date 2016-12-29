@@ -24,7 +24,7 @@ node_modules/.bin/ember build --prod
   git config user.email "iglosiggio@gmail.com"
   git remote add origin "https://${GH_TOKEN}@${GH_REF}"
   # Pedimos el historial y nos movemos a gh-pages
-  git fetch --depth=1 origin gh-pages
+  git fetch --depth=1 origin gh-pages >/dev/null 2>&1
   git reset origin/gh-pages
   # Agregamos todo lo que haya cambiado y commiteamos
   git add -A .
