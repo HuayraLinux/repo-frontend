@@ -4,9 +4,6 @@ set -o errexit -o nounset
 # Hash corto de commit
 rev=$(git rev-parse --short HEAD)
 
-# Borro el deploy anterior
-rm -rf deploy
-
 # Instalamos las dependencias
 npm install
 node_modules/.bin/bower install
@@ -24,7 +21,7 @@ node_modules/.bin/ember build --prod
   git config user.email "iglosiggio@gmail.com"
   git remote add origin "https://${GH_TOKEN}@${GH_REF}"
   # Pedimos el historial y nos movemos a gh-pages
-  git fetch origin
+  git fetch --depth=1 origin gh-pages
   git reset origin/gh-pages
   # Agregamos todo lo que haya cambiado y commiteamos
   git add -A .
