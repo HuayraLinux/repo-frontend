@@ -5,13 +5,16 @@ set -o errexit -o nounset
 rev=$(git rev-parse --short HEAD)
 
 # Instalamos las dependencias
+echo Instalando dependencias
 npm install
 node_modules/.bin/bower install
 
 # Generamos la página
+echo Buildeando html para producción
 node_modules/.bin/ember build --prod
 
 (
+  echo Generando commit para gh-pages
   cd dist
   # Queremos que nos tomen las carpetas que empiezan con _ (fuente: http://stackoverflow.com/a/39691475)
   touch .nojekyll
