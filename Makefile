@@ -22,8 +22,6 @@ comandos:
 	@echo "    ${G}version_minor${N}        Genera una versión (0.MINOR.0)."
 	@echo "    ${G}version_major${N}        Genera una versión (MAJOR.0.0)."
 	@echo ""
-	@echo "    ${G}deploy${N}               Sube el sitio a http://repo-frontend.surge.sh"
-	@echo ""
 	@echo ""
 
 iniciar:
@@ -39,7 +37,3 @@ version_minor:
 
 version_major:
 	ember release --major
-
-deploy:
-	ember build --prod
-	cd dist; surge -d repo-frontend.surge.sh
