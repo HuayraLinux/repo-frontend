@@ -10,7 +10,7 @@ las versiones de los paquetes y hacer consultas.
 
 ## Versión online
 
-Actualmente estamos publicando una versión de produccion en: <a href="http://repo-frontend.surge.sh" target=_blank>http://repo-frontend.surge.sh</a>
+Actualmente estamos publicando una versión de produccion en: <a href="http://devel.huayragnulinux.com.ar/" target=_blank>http://devel.huayragnulinux.com.ar/</a>
 
 ## Como instalar
 
