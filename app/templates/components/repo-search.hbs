@@ -1,0 +1,9 @@
+{{yield}}
+{{input type="search" value=search key-press=(action debounceSearch)}}
+<ul>
+  {{#each results as |result|}}
+    <li>{{result}}</li>
+  {{else}}
+    <b><i>No se encontraron resultados</i></b>
+  {{/each}}
+</ul>

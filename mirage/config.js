@@ -1,3 +1,5 @@
+import packages from  './packages';
+
 export default function() {
 
   // this.urlPrefix = '';    // make this `http://localhost:8080`, for example, if your API is on a different server
@@ -264,5 +266,9 @@ export default function() {
         Description: 'Repositorio EN desarrollo de Huayra',
       },
     ];
+  });
+
+  this.get('/packages', () => {
+    return packages;
   });
 }
