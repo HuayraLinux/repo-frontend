@@ -1,16 +1,8 @@
 <div class="ui search">
   {{yield}}
   <div class="ui icon input">
-    {{input class="prompt" placeholder="Nombre del paquete" type="search" value=search}}
+    <input class="prompt" type="text" placeholder="Buscar paquete..." />
     <i class="search icon"></i>
   </div>
-  <div class="results">
-    {{#each results as |result|}}
-      <div class="result">{{result}}</div>
-    {{else}}
-      <i>No se encontraron resultados</i>
-    {{/each}}
-    <button disabled={{disablePrevious}} {{action previous}}>Anterior</button>
-    <button disabled={{disableNext}} {{action next}}>Siguiente</button>
-  </div>
+  <div class="results"></div>
 </div>
