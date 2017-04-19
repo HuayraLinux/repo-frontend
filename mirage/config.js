@@ -1,5 +1,3 @@
-import packages from  './packages';
-
 export default function() {
 
   // this.urlPrefix = '';    // make this `http://localhost:8080`, for example, if your API is on a different server
@@ -268,7 +266,19 @@ export default function() {
     ];
   });
 
-  this.get('/packages', () => {
-    return packages;
+  this.get('/packages/search/:query', () => {
+    return {
+      results: [
+        { title: 'Test', description: 'test' },
+        { title: 'TestA', description: 'test' },
+        { title: 'TestB', description: 'test' },
+        { title: 'TestC', description: 'test' },
+        { title: 'TestD', description: 'test' },
+        { title: 'TestE', description: 'test' },
+        { title: 'TestF', description: 'test' },
+        { title: 'TestG', description: 'test' },
+        { title: 'TestH', description: 'test' },
+      ]
+    };
   });
 }
